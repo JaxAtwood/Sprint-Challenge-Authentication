@@ -40,11 +40,23 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 - [ ] What is the purpose of using _sessions_?
 
+    ANSWER: Sessions allow the storage of user information for authentication. Session ids are normally sent to the browser using cookies.
+
 - [ ] What does bcrypt do to help us store passwords in a secure manner.
+
+    ANSWER: Two parts: hashes the password and also salts it to make it more complicated to reverse engineer the hash. Salting is that extra phrase.
 
 - [ ] What does bcrypt do to slow down attackers?
 
+    ANSWER: How many times they run the hash slows it down, takes more time and slows down the salt.
+
 - [ ] What are the three parts of the JSON Web Token?
+
+    ANSWER: 
+    Header: algorithm and the token type
+    Payload: user data, claims (public, registered, and private)
+    Signature: how the algorithm or secret and how it’s encoded, validate user from another.
+
 
 ## Minimum Viable Product
 
